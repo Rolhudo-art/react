@@ -2,7 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-
+import Lista from "./pages/lista"
 import Welcome from "./pages/welcome";
 import Login from "./pages/login";
 import Cadastro from "./pages/cadastro";
@@ -23,6 +23,8 @@ export default function App() {
   <Stack.Screen name="Login" component={Login}  />
   <Stack.Screen name="Splash" component={Splash} options={{headerTransparent:true, headerTitle:""}} />
   <Stack.Screen name="Cep" component={Cep} options={{headerTransparent:true, headerTitle:""}} />
+  <Stack.Screen name="Lista" component={Lista} options={{headerTransparent:true, headerTitle:""}} />
+
 
 </Stack.Navigator>
 </NavigationContainer>

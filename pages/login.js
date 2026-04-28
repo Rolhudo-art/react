@@ -44,7 +44,7 @@ export default function Login({ navigation }) {
         await AsyncStorage.setItem('user', JSON.stringify(response.data.user));
 
         Alert.alert("Sucesso", "Login realizado com sucesso!");
-        navigation.replace("Welcome"); // Navega para a tela principal
+        navigation.replace("Lista"); // Navega para a tela principal
       } else {
         // Se a resposta não contém token ou success=false
         Alert.alert("Erro", response.data.message || "Falha no login");
