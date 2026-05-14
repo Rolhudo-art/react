@@ -75,6 +75,20 @@ export default function Lista({ navigation }) {
       <Text style={styles.titulosText}>
         🏆 {item.titulos} título(s)
       </Text>
+
+      {/* BOTÃO EDITAR */}
+      <TouchableOpacity
+        style={styles.editButton}
+        onPress={() =>
+          navigation.navigate("EditarTime", {
+            time: item
+          })
+        }
+      >
+        <Text style={styles.editButtonText}>
+          EDITAR TIME
+        </Text>
+      </TouchableOpacity>
     </Pressable>
   );
 
@@ -308,6 +322,20 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 18,
     fontWeight: "700",
+  },
+
+  editButton: {
+    backgroundColor: "#e2fd10",
+    marginTop: 15,
+    padding: 12,
+    borderRadius: 5,
+    alignItems: "center",
+  },
+
+  editButtonText: {
+    color: "#000",
+    fontWeight: "900",
+    fontSize: 14,
   },
 
   modalContent: {

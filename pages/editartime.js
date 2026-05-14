@@ -231,6 +231,7 @@ export default function EditarTime({ navigation, route }) {
 }
 
 const styles = StyleSheet.create({
+
   background: { 
     flex: 1 
   },
@@ -311,4 +312,5 @@ const styles = StyleSheet.create({
     color: '#888',
     fontSize: 14
   }
+
 });
